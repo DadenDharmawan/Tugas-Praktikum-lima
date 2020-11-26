@@ -1,0 +1,33 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 30%;
+    /* border: 1px solid; */        
+    position: absolute;
+    left: 2%;
+
+}
+/* .kotak {
+    border: 1px solid;
+} */
+/* .list{
+    position: absolute;
+    left: 0%;
+
+} */
+#input_1 {
+    display: block;
+    float: right;
+    
+}
+table{
+    background-color: cyan;
+    width: 50%;
+    border: 1px solid;
+}
+button{
+    /* float: left; */
+    
+    
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        select {
+            background-color: aqua;
+            color: black;
+            position: relative;
+            top: 90%;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+        }
+        img {
+            width: 20%;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+    </style>
+
+    <select class="" onchange="change_pic(this.value)">
+        <option value="">Select Image</option>
+        <option value="bob">Spongebob</option>
+        <option value="gerry">Gerry</option>
+        <option value="patrick">Patrick</option>
+        <option value="squidi">Squidward</option>
+        <option value="sandy">Sandy</option>
+        <option value="crab">Mr. Crab</option>
+        <option value="plankton">Plankton</option>
+    </select> <br>
+    <img src="" id="gambar" alt="">
+    <script>
+        function change_pic(set) {
+            var photo
+            if(set == 'bob'){ 
+                photo = "img/bobss.jpg"
+                alert('Spongebob : "Lebih baik tenggelam di danau prasejarah daripada menjadi penjahat seumur hidup." ')
+            } else if(set == 'gerry'){
+                photo = "img/gerrys.jpg"
+                alert('Gerry : "meow meooooow meow meow meeeeeew meow" ')    
+            } else if(set == 'patrick'){
+                photo = "img/patrick.jpg"
+                alert('Patrick : "Jangan membiarkan hatimu pergi darimu, kecuali pikiranmu mempunyai kaki dan menjauhimu." ')
+            } else if(set == 'squidi'){
+                photo = "img/squidis.jpg"
+                alert('Squidward : "Aku lebih suka merobek otakku, lalu membawanya kepertengahan perempatan jalan dan bermain lompat tali bersamanya. Dari pada tinggal bersama kalian." ')
+            } else if(set == 'sandy'){
+                photo = "img/sandys.jpg"
+                alert(' Sandy : "Kau tidak perlu tahu segalanya tentang teman baikmu. Itulah yang membuat persahabatan itu menarik"')
+            } else if(set == 'crab'){
+                photo = "img/crabs.jpg"
+                alert('Crab : "Terkadang apa yang tidak kau bicarakan lebih bernilai daripada yang kau bicarakan" ')
+            } else if(set == 'plankton'){
+                photo = "img/plankton.jpg"
+                alert('Plankton : "Mawar itu merah, kenangan itu biru, dominasi dunia ada padamu." ')
+            }
+            console.log(photo);
+            document.getElementById("gambar").src = photo
+        }
+    </script>
+    
+</body>
+</html>

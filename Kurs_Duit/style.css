@@ -1,0 +1,15 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.table1 {
+    font-family: sans-serif;
+    color: #232323;
+    background-color: cornsilk;
+    border-collapse: collapse;
+}
+.table1, th, td {
+    border: 1px solid;
+    color: #232323;
+    background-color: cornsilk; 
+    padding: 7px 5px;
+}
